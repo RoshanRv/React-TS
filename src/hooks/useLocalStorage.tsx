@@ -14,7 +14,6 @@ const useLocalStorage = <T,>(key: string, initialValue: T | (() => T)) => {
 
     useEffect(() => {
         localStorage.setItem(key, JSON.stringify(value))
-        console.log(typeof value, typeof setValue)
     }, [key, value])
 
     return [value, setValue] as [typeof value, typeof setValue]
