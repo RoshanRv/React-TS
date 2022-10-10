@@ -1,4 +1,5 @@
 import React, { createContext, useState, ReactNode } from "react"
+import Cart from "../components/Cart"
 import useLocalStorage from "../hooks/useLocalStorage"
 
 interface ShoppingCartProp {
@@ -95,6 +96,7 @@ const ShoppingCartProvider = ({ children }: ShoppingCartProp) => {
             }}
         >
             {children}
+            <Cart isCartOpen={isCartOpen} />
         </ShoppingCartContext.Provider>
     )
 }
