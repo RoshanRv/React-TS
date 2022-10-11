@@ -12,6 +12,7 @@ const Navbar = () => {
                 <div className="flex items-center gap-x-6 text-lg">
                     <Link to={"/"}>Home</Link>
                     <Link to={"/store"}>Store</Link>
+                    <Link to={"/select"}>Select</Link>
                 </div>
                 <div className="relative">
                     <FaShoppingCart
